@@ -1,73 +1,44 @@
-# Welcome to your Lovable project
+# inkflow — Warm Editorial Personal Finance Ledger
 
-## Project info
+Crafted by **Jiddan Ibnu Ali** ([@4jeeh](https://github.com/4jeeh)).
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+**inkflow** is a personal finance web application designed around a **Warm Editorial Fintech with Hand-Drawn Doodles & Abstract Shapes** aesthetic. Moving away from sterile neon-purple templates, inkflow treats personal bookkeeping like a tactile editorial notebook—combining crisp typography, deep ink lines, hand-drawn SVG annotations, and real-time `localStorage` persistence.
 
-## How can I edit this code?
+## Visual & Design Philosophy
 
-There are several ways of editing your application.
+- **Canvas & Ink Palette**:
+  - **Warm Cream / Paper Canvas**: `#FAF8F5`
+  - **Deep Ink Borders & Typography**: `#1E1E24`
+  - **Editorial Accents**: Tangerine (`#FB923C`), Cobalt (`#3B82F6`), and Sage (`#84CC16`)
+- **Hand-Drawn Doodle Ornaments**:
+  - Irregular hand-drawn highlight rings on key figures
+  - Wavy ink underline beneath primary balance titles
+  - Hand-sketched directional arrows and tilted sticky notes for personal financial memos
+- **Typography**:
+  - **UI & Numerical Ledger**: `Plus Jakarta Sans` & `Inter` (tabular figures)
+  - **Handwritten Annotations**: `Caveat` & `Architects Daughter`
 
-**Use Lovable**
+## Key Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+1. **Interactive Editorial Dashboard (`/`)**:
+   - Real-time Net Balance, Monthly Cash Inflow, Outflow, and Savings Rate with hand-drawn doodle highlights and sticky-note reminders.
+   - **High-Contrast Ink Cash Flow Chart**: Thick ink-stroke visualization comparing monthly income vs. expenses with interactive period filters and handwritten peak annotations.
+   - **Interactive Transaction Ledger**: Add new income/expense transactions, filter by category or type, search entries, and persist everything in `localStorage`.
+2. **Abstract Doodle Wallets (`/wallet`)**:
+   - Multi-wallet cards featuring bespoke abstract geometric & hand-drawn SVG art (Main Checking, Creative Studio Vault, Daily Pocket).
+   - Quick inter-wallet balance transfer and per-wallet transaction breakdown.
+3. **Saving Goals & Sticky Targets (`/savings`)**:
+   - Track personal saving milestones with ink-bordered progress bars, sticky-note motivations, instant fund top-ups, and custom goal creation stored in `localStorage`.
 
-Changes made via Lovable will be committed automatically to this repo.
+## Local Development
 
-**Use your preferred IDE**
+```bash
+# Install dependencies
+npm install
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
+
+# Build for production
+npm run build
 ```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)

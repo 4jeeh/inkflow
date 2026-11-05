@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import tailwindcssAnimate from "tailwindcss-animate";
 
 export default {
   darkMode: ["class"],
@@ -14,9 +15,39 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+        sans: ['"Plus Jakarta Sans"', "Inter", "system-ui", "sans-serif"],
+        inter: ["Inter", '"Plus Jakarta Sans"', "system-ui", "sans-serif"],
+        hand: ["Caveat", '"Architects Daughter"', "cursive"],
+        sketch: ['"Architects Daughter"', "Caveat", "cursive"],
       },
       colors: {
+        paper: {
+          DEFAULT: "#FAF8F5",
+          warm: "#F3EFE6",
+          card: "#FFFDF9",
+          sticky: "#FEF3C7",
+        },
+        ink: {
+          DEFAULT: "#1E1E24",
+          muted: "#5C5A66",
+          soft: "#8C8996",
+          line: "#D8D3C8",
+        },
+        tangerine: {
+          DEFAULT: "#FB923C",
+          deep: "#EA580C",
+          soft: "#FFEDD5",
+        },
+        cobalt: {
+          DEFAULT: "#3B82F6",
+          deep: "#1D4ED8",
+          soft: "#DBEAFE",
+        },
+        sage: {
+          DEFAULT: "#84CC16",
+          deep: "#4D7C0F",
+          soft: "#ECFCCB",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -79,6 +110,13 @@ export default {
         xl: "calc(var(--radius) + 4px)",
         "2xl": "calc(var(--radius) + 8px)",
       },
+      boxShadow: {
+        ink: "3px 3px 0px 0px #1E1E24",
+        "ink-sm": "2px 2px 0px 0px #1E1E24",
+        "ink-lg": "5px 5px 0px 0px #1E1E24",
+        "ink-tangerine": "3px 3px 0px 0px #FB923C",
+        "ink-cobalt": "3px 3px 0px 0px #3B82F6",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -88,22 +126,12 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        "fade-in": {
-          from: { opacity: "0", transform: "translateY(10px)" },
-          to: { opacity: "1", transform: "translateY(0)" },
-        },
-        "slide-in-left": {
-          from: { opacity: "0", transform: "translateX(-20px)" },
-          to: { opacity: "1", transform: "translateX(0)" },
-        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "fade-in": "fade-in 0.5s ease-out forwards",
-        "slide-in-left": "slide-in-left 0.4s ease-out forwards",
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindcssAnimate],
 } satisfies Config;

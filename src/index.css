@@ -2,120 +2,130 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Premium Finance Dashboard Design System
-   All colors MUST be HSL.
+/* 
+  inkflow — Warm Editorial Fintech with Hand-Drawn Doodles & Abstract Shapes
+  Crafted by Jiddan Ibnu Ali (@4jeeh)
+  Palette:
+  - Warm Cream / Paper Canvas: #FAF8F5 (36 33% 97%)
+  - Warm Card Surface: #FFFDF9 (40 100% 99%)
+  - Deep Ink Borders & Text: #1E1E24 (240 9% 13%)
+  - Tangerine Accent: #FB923C (27 96% 61%)
+  - Cobalt Accent: #3B82F6 (217 91% 60%)
+  - Sage Accent: #84CC16 (84 81% 44%)
 */
 
 @layer base {
   :root {
-    /* Plus Jakarta Sans as primary font */
-    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-sans: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+    --font-hand: 'Caveat', cursive;
+    --font-sketch: 'Caveat', cursive;
 
-    /* Light Mode - Clean whites with Soft Indigo accent */
-    --background: 0 0% 98%;
-    --foreground: 224 71% 4%;
+    /* Warm Cream Paper Canvas (#FAF8F5) */
+    --background: 36 33% 97%;
+    /* Deep Ink (#1E1E24) */
+    --foreground: 240 9% 13%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 224 71% 4%;
+    /* Crisp Warm Sheet (#FFFDF9) */
+    --card: 40 100% 99%;
+    --card-foreground: 240 9% 13%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 224 71% 4%;
+    --popover: 40 100% 99%;
+    --popover-foreground: 240 9% 13%;
 
-    /* Soft Indigo Primary */
-    --primary: 238 65% 60%;
-    --primary-foreground: 0 0% 100%;
+    /* Deep Ink Primary Action with Tangerine/Cobalt highlights */
+    --primary: 240 9% 13%;
+    --primary-foreground: 36 33% 97%;
 
-    --secondary: 220 14% 96%;
-    --secondary-foreground: 224 71% 4%;
+    /* Warm Sand Secondary (#F3EFE6) */
+    --secondary: 40 32% 93%;
+    --secondary-foreground: 240 9% 13%;
 
-    --muted: 220 14% 96%;
-    --muted-foreground: 220 9% 46%;
+    --muted: 38 26% 92%;
+    --muted-foreground: 250 6% 35%;
 
-    --accent: 238 65% 96%;
-    --accent-foreground: 238 65% 50%;
+    /* Tangerine Warm Accent */
+    --accent: 27 96% 61%;
+    --accent-foreground: 240 9% 13%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 14 88% 50%;
+    --destructive-foreground: 40 100% 99%;
 
-    /* Finance-specific colors */
-    --success: 142 71% 45%;
-    --success-foreground: 0 0% 100%;
+    /* Sage Green for Inflow / Positive */
+    --success: 84 81% 36%;
+    --success-foreground: 40 100% 99%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 238 65% 60%;
+    /* Deep Ink Border */
+    --border: 240 9% 13%;
+    --input: 240 9% 13%;
+    --ring: 217 91% 60%;
 
     --radius: 0.75rem;
 
-    /* Sidebar */
-    --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 224 71% 4%;
-    --sidebar-primary: 238 65% 60%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 238 65% 96%;
-    --sidebar-accent-foreground: 238 65% 50%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 238 65% 60%;
+    /* Sidebar — Warm Editorial Margin */
+    --sidebar-background: 38 35% 95%;
+    --sidebar-foreground: 240 9% 13%;
+    --sidebar-primary: 240 9% 13%;
+    --sidebar-primary-foreground: 36 33% 97%;
+    --sidebar-accent: 40 32% 90%;
+    --sidebar-accent-foreground: 240 9% 13%;
+    --sidebar-border: 240 9% 13%;
+    --sidebar-ring: 27 96% 61%;
 
-    /* Chart colors */
-    --chart-1: 238 65% 60%;
-    --chart-2: 142 71% 45%;
-    --chart-3: 38 92% 50%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 200 80% 50%;
+    /* High-Contrast Chart Ink Colors */
+    --chart-1: 217 91% 55%; /* Cobalt #3B82F6 */
+    --chart-2: 27 96% 56%;  /* Tangerine #FB923C */
+    --chart-3: 84 81% 40%;  /* Sage #84CC16 */
+    --chart-4: 240 9% 13%;  /* Deep Ink #1E1E24 */
+    --chart-5: 45 93% 47%;
   }
 
   .dark {
-    /* Dark Mode - Deep slate with Soft Indigo accent */
-    --background: 224 71% 4%;
-    --foreground: 210 20% 98%;
+    /* Charcoal Sketchbook Mode (High-Contrast Warm Dark Paper) */
+    --background: 240 10% 10%;
+    --foreground: 36 33% 96%;
 
-    --card: 224 50% 8%;
-    --card-foreground: 210 20% 98%;
+    --card: 240 9% 14%;
+    --card-foreground: 36 33% 96%;
 
-    --popover: 224 50% 8%;
-    --popover-foreground: 210 20% 98%;
+    --popover: 240 9% 14%;
+    --popover-foreground: 36 33% 96%;
 
-    /* Soft Indigo Primary (lighter for dark mode) */
-    --primary: 238 65% 65%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 27 96% 61%;
+    --primary-foreground: 240 9% 13%;
 
-    --secondary: 224 30% 15%;
-    --secondary-foreground: 210 20% 98%;
+    --secondary: 240 8% 19%;
+    --secondary-foreground: 36 33% 96%;
 
-    --muted: 224 30% 15%;
-    --muted-foreground: 220 14% 60%;
+    --muted: 240 8% 18%;
+    --muted-foreground: 36 18% 72%;
 
-    --accent: 238 50% 20%;
-    --accent-foreground: 238 65% 75%;
+    --accent: 240 8% 22%;
+    --accent-foreground: 27 96% 61%;
 
-    --destructive: 0 62% 40%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 14 88% 58%;
+    --destructive-foreground: 240 9% 13%;
 
-    /* Finance-specific colors */
-    --success: 142 71% 45%;
-    --success-foreground: 0 0% 100%;
+    --success: 84 81% 50%;
+    --success-foreground: 240 9% 13%;
 
-    --border: 224 30% 18%;
-    --input: 224 30% 18%;
-    --ring: 238 65% 65%;
+    --border: 36 20% 32%;
+    --input: 36 20% 32%;
+    --ring: 27 96% 61%;
 
-    /* Sidebar */
-    --sidebar-background: 224 50% 6%;
-    --sidebar-foreground: 210 20% 98%;
-    --sidebar-primary: 238 65% 65%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 238 50% 20%;
-    --sidebar-accent-foreground: 238 65% 75%;
-    --sidebar-border: 224 30% 18%;
-    --sidebar-ring: 238 65% 65%;
+    --sidebar-background: 240 10% 12%;
+    --sidebar-foreground: 36 33% 96%;
+    --sidebar-primary: 27 96% 61%;
+    --sidebar-primary-foreground: 240 9% 13%;
+    --sidebar-accent: 240 8% 18%;
+    --sidebar-accent-foreground: 36 33% 96%;
+    --sidebar-border: 36 20% 28%;
+    --sidebar-ring: 27 96% 61%;
 
-    /* Chart colors */
-    --chart-1: 238 65% 65%;
-    --chart-2: 142 71% 50%;
-    --chart-3: 38 92% 55%;
-    --chart-4: 280 65% 65%;
-    --chart-5: 200 80% 55%;
+    --chart-1: 217 91% 65%;
+    --chart-2: 27 96% 61%;
+    --chart-3: 84 81% 52%;
+    --chart-4: 36 33% 96%;
+    --chart-5: 45 93% 58%;
   }
 }
 
@@ -126,76 +136,93 @@
 
   html {
     font-family: var(--font-sans);
+    scroll-behavior: smooth;
   }
 
   body {
     @apply bg-background text-foreground antialiased;
+    background-image: radial-gradient(rgba(30, 30, 36, 0.07) 1px, transparent 0);
+    background-size: 24px 24px;
+  }
+
+  .dark body {
+    background-image: radial-gradient(rgba(250, 248, 245, 0.06) 1px, transparent 0);
+    background-size: 24px 24px;
+  }
+
+  ::selection {
+    background-color: #FB923C;
+    color: #1E1E24;
   }
 }
 
 @layer utilities {
-  /* Smooth transitions for theme switching */
-  .theme-transition {
-    @apply transition-colors duration-300 ease-in-out;
+  /* Tactile Editorial Ink Frame */
+  .ink-card {
+    @apply bg-card border-2 border-[#1E1E24] dark:border-[#FAF8F5]/30 rounded-xl;
+    box-shadow: 3px 3px 0px 0px #1E1E24;
   }
 
-  /* Premium shadow utilities */
-  .shadow-soft {
-    box-shadow: 0 2px 8px -2px hsl(var(--foreground) / 0.05),
-                0 4px 16px -4px hsl(var(--foreground) / 0.08);
+  .dark .ink-card {
+    box-shadow: 3px 3px 0px 0px rgba(250, 248, 245, 0.25);
   }
 
-  .shadow-soft-lg {
-    box-shadow: 0 4px 12px -4px hsl(var(--foreground) / 0.06),
-                0 8px 24px -8px hsl(var(--foreground) / 0.1);
+  .ink-card-interactive {
+    @apply ink-card transition-transform duration-150 ease-out;
   }
 
-  /* Gradient backgrounds */
-  .gradient-primary {
-    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(238 65% 70%) 100%);
+  .ink-card-interactive:hover {
+    transform: translate(-1.5px, -1.5px);
+    box-shadow: 4.5px 4.5px 0px 0px #1E1E24;
   }
 
-  /* Animation utilities */
-  .animate-fade-in {
-    animation: fadeIn 0.5s ease-out forwards;
+  .ink-button {
+    @apply border-2 border-[#1E1E24] font-semibold transition-all duration-150 ease-out active:translate-x-[2px] active:translate-y-[2px];
+    box-shadow: 2.5px 2.5px 0px 0px #1E1E24;
   }
 
-  .animate-slide-up {
-    animation: slideUp 0.5s ease-out forwards;
+  .ink-button:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 3.5px 3.5px 0px 0px #1E1E24;
   }
 
-  .animate-scale-in {
-    animation: scaleIn 0.3s ease-out forwards;
+  .ink-button:active {
+    box-shadow: 0.5px 0.5px 0px 0px #1E1E24;
   }
-}
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
+  /* Sticky note styling */
+  .sticky-note {
+    background-color: #FEF3C7;
+    color: #1E1E24;
+    border: 2px solid #1E1E24;
+    box-shadow: 3px 4px 0px 0px #1E1E24;
   }
-  to {
-    opacity: 1;
-  }
-}
 
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
+  .font-handwriting {
+    font-family: var(--font-hand);
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
-@keyframes scaleIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
+  .font-sketch {
+    font-family: var(--font-sketch);
   }
-  to {
-    opacity: 1;
-    transform: scale(1);
+
+  /* Custom editorial scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #FAF8F5;
+    border-left: 1px solid rgba(30, 30, 36, 0.15);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #1E1E24;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #FB923C;
   }
 }
