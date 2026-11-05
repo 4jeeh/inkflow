@@ -1,7 +1,28 @@
 {
   "name": "inkflow",
-  "private": true,
+  "private": false,
   "version": "1.0.0",
+  "description": "Warm Editorial Personal Finance Web App with Hand-Drawn Doodles, Abstract Wallet Cards, High-Contrast Ink Cash Flow, and LocalStorage Persistence",
+  "author": "Jiddan Ibnu Ali (@4jeeh)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/4jeeh/inkflow.git"
+  },
+  "homepage": "https://github.com/4jeeh/inkflow#readme",
+  "keywords": [
+    "inkflow",
+    "personal-finance",
+    "fintech",
+    "editorial-design",
+    "hand-drawn-doodles",
+    "cash-flow",
+    "wallet",
+    "saving-goals",
+    "react",
+    "typescript",
+    "tailwindcss"
+  ],
   "type": "module",
   "scripts": {
     "dev": "vite",
