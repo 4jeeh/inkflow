@@ -32,7 +32,7 @@ Replacing sterile, neon-purple AI dashboard templates (`manajemen-keuangan` / `v
 
 ---
 
-## 3.0 DESIGN SYSTEM & AESTHETIC PHILOSOPHY (0% AI-SLOP)
+## 3.0 DESIGN SYSTEM & EDITORIAL AESTHETIC PHILOSOPHY
 
 ### 3.1 Color Palette
 
